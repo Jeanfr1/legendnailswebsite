@@ -5,7 +5,7 @@
 <h3>A one-page website for a nail salon in St Albans, built around a scroll-driven camera move from a quiet gesture to the detail of a single nail.</h3>
 
 <p>
-  <strong>🌐 Live site: coming soon</strong>
+  <a href="https://legend-nails-st-albans.vercel.app"><strong>🌐 Live site</strong></a>
   &nbsp;·&nbsp;
   <a href="#hero-animation"><strong>🎬 How the hero works</strong></a>
   &nbsp;·&nbsp;
@@ -13,7 +13,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Vercel-Ready-3F4737?style=for-the-badge&logo=vercel&logoColor=white" alt="Ready for Vercel" />
+  <a href="https://legend-nails-st-albans.vercel.app"><img src="https://img.shields.io/badge/Vercel-Live-3F4737?style=for-the-badge&logo=vercel&logoColor=white" alt="Live on Vercel" /></a>
   <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 6" />
   <img src="https://img.shields.io/badge/JavaScript-ES2020-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Animation_library-none-DDC4BB?style=for-the-badge" alt="No animation library" />
@@ -42,8 +42,8 @@ From there the page breathes: services, a gallery of styles, a nudge to bring yo
 ## 🎬 The hero animation
 
 <div align="center">
-  <img src=".github/assets/hero-scroll.gif" alt="Scrolling through the hero: the camera moves in on a nail, the layers separate, polish and a reflection cross the surface, and the camera pulls back to the finished hand, which docks into the next section" width="100%" />
-  <sub>Scroll-scrubbed on the production build · captured at 1440 × 900</sub>
+  <a href="https://legend-nails-st-albans.vercel.app"><img src=".github/assets/hero-scroll.gif" alt="Scrolling through the hero: the camera moves in on a nail, the layers separate, polish and a reflection cross the surface, and the camera pulls back to the finished hand, which docks into the next section" width="100%" /></a>
+  <sub>Scroll-scrubbed on the live site · captured at 1440 × 900</sub>
 </div>
 
 <br />
@@ -128,7 +128,7 @@ A thin pink line, the stroke from the hero, carries on between the sections and 
 - **No animation library**: the hero is a pure function of one scroll value, so a `requestAnimationFrame` loop and CSS transforms are all it needs
 - **sharp + OpenCV for the assets**: measuring, registering and recolouring the kit's images happens once, at build time, not in the browser
 - **Self-hosted Fraunces and Jost**: soft serif display type and a light geometric sans, with no third-party font requests
-- **Vercel**: static output, one build command
+- **Vercel**: every push to `main` deploys automatically; hashed assets are cached for a year (`vercel.json`)
 
 <br />
 
@@ -206,16 +206,17 @@ legendnailswebsite/
 │   ├── optimize-images.mjs       # PNG → WebP, layer registration, geometry, favicon, OG image
 │   ├── extract-pdf-assets.py     # Pulls the images out of the catalogue PDF
 │   └── hand-variants.py          # Nude and olive versions of the finished hand
-└── public/                       # Favicon, Open Graph image, gallery images
+├── public/                       # Favicon, Open Graph image, gallery images
+└── vercel.json                   # One-year cache for hashed assets
 ```
 
 <br />
 
 ## 🚀 Deployment
 
-Ready for **Vercel**: connect this repository and every push to `main` ships to production.
+Hosted on **Vercel** and connected to this repository: every push to `main` ships to production.
 
-**Live site:** coming soon
+**Live site:** [legend-nails-st-albans.vercel.app](https://legend-nails-st-albans.vercel.app)
 
 | Setting          | Value           |
 | :--------------- | :-------------- |
@@ -234,7 +235,7 @@ Items waiting on the salon. Each one is marked `TODO(legend)` in `index.html`.
 - [ ] Opening hours, walk-ins and payment methods for **Visit us.**
 - [ ] Authorised photos of the salon's own work to replace the concept images in the gallery
 - [ ] Vector version of the wordmark for print and very small sizes (the site uses the transparent PNG from the kit)
-- [ ] Final domain (then add `canonical` and `og:url`, and make `og:image` absolute)
+- [ ] Custom domain (then update `canonical`, `og:url`, `og:image` and the structured data URL)
 - [ ] Optional: a produced video or 3D render of the hand for the hero, as the brief suggests, to replace the 2.5D layers
 
 <br />
