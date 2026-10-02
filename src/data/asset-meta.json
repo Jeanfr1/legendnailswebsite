@@ -1,0 +1,39 @@
+{
+  "nail": {
+    "ratio": 0.9673,
+    "cx": 0.4755,
+    "cy": 0.4991,
+    "angle": -134.9909,
+    "length": 1.2737
+  },
+  "brush": {
+    "ratio": 1.0818,
+    "tipX": 0.9421,
+    "tipY": 0.9004,
+    "angle": -139.0593
+  },
+  "hand": {
+    "ratio": 0.987,
+    "nailX": 0.1793,
+    "nailY": 0.0425,
+    "nailLength": 0.1183,
+    "nailAngle": -137.5
+  },
+  "portrait": {
+    "width": 1536,
+    "height": 1024,
+    "nailX": 1257,
+    "nailY": 372,
+    "nailLength": 64,
+    "nailAngle": -128.7
+  },
+  "ribbon": {
+    "ratio": 0.4668
+  },
+  "composition": {
+    "ratio": 1.3815
+  },
+  "logo": {
+    "ratio": 0.3947
+  }
+}
